@@ -122,6 +122,28 @@
   </div>
 </section>
 
+<!-- ALDEN Analysis Figure Section -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="box">
+      <div class="columns is-centered">
+        <div class="column is-full has-text-centered">
+            <h2 class="title is-3">The ALDEN Concept</h2>
+            <!-- 图片高宽比已修正为 1:1，更适合您的图片 -->
+            <figure class="image is-4by1" style="max-width: 600px; margin: 0 auto;">
+              <img src="static/images/ALDEN_Analysis.jpg" alt="ALDEN Concept Illustration">
+            </figure>
+            <div class="content" style="margin-top: 1rem;">
+                <p>
+                    An illustration of the ALDEN framework, structured along two key axes: low-level signal disentanglement (vertical) and high-level semantic disentanglement (horizontal). ALDEN incorporates dual-level disentangled learning (scissors) and meta-learning (recycling) to improve generalization across different vocoders. By focusing on vocoder-agnostic features and synthetic-relevant cues, ALDEN enhances the model's generalization ability while minimizing sensitivity to irrelevant variations.
+                </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
 <!-- Abstract Section -->
 <section class="section">
   <div class="container is-max-desktop">
@@ -140,27 +162,7 @@
   </div>
 </section>
 
-<!-- ALDEN Analysis Figure Section -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="box">
-      <div class="columns is-centered">
-        <div class="column is-full has-text-centered">
-            <h2 class="title is-3">The ALDEN Concept</h2>
-            <!-- 图片高宽比已修正为 1:1，更适合您的图片 -->
-            <figure class="image is-1by1" style="max-width: 600px; margin: 0 auto;">
-              <img src="static/images/ALDEN_Analysis.jpg" alt="ALDEN Concept Illustration">
-            </figure>
-            <div class="content" style="margin-top: 1rem;">
-                <p>
-                    An illustration of the ALDEN framework, structured along two key axes: low-level signal disentanglement (vertical) and high-level semantic disentanglement (horizontal). ALDEN incorporates dual-level disentangled learning (scissors) and meta-learning (recycling) to improve generalization across different vocoders. By focusing on vocoder-agnostic features and synthetic-relevant cues, ALDEN enhances the model's generalization ability while minimizing sensitivity to irrelevant variations.
-                </p>
-            </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+
 
 <!-- ALDEN Framework Figure Section -->
 <section class="section">
@@ -169,10 +171,7 @@
         <div class="columns is-centered">
           <div class="column is-full has-text-centered">
               <h2 class="title is-3">ALDEN Framework</h2>
-              <!-- 这里为您添加了响应式的 figure 容器，请根据您 framework 图片的实际比例调整 is-16by9 -->
-              <figure class="image is-16by9">
                 <img src="static/images/ALDEN_Framework.jpg" alt="ALDEN Framework Diagram">
-              </figure>
               <div class="content" style="margin-top: 1rem;">
                 <p>
                   Overall framework of the proposed ALDEN. The ALDEN consists of three key components: (a) An adversarial-training-based disentanglement learning (ADL) module employs a multi-task learning strategy to disentangle vocoder-specific features f<sup>d</sup> from vocoder-agnostic features f<sup>a</sup>. (b) A reconstruction-based disentanglement learning (RDL) module uses audio reconstruction to disentangle f<sup>a</sup>, content features f<sup>c</sup>, and speaker features f<sup>s</sup>. (c) A vocoder-agnostic meta-learning (VAML) module mitigates overfitting to specific vocoders and facilitates the effective updating of the vocoder-agnostic encoder E<sub>a</sub> and the forgery classifier C<sub>a</sub>.
