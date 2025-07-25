@@ -37,6 +37,17 @@
   <script src="static/js/bulma-carousel.min.js"></script>
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
+
+  <!-- Style for centering carousel images -->
+  <style>
+    #results-carousel .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
 
@@ -57,8 +68,8 @@
 
     <div id="navbar-menu" class="navbar-menu">
       <div class="navbar-end">
-        <a class="navbar-item" href="#abstract">Abstract</a>
         <a class="navbar-item" href="#concept">Concept</a>
+        <a class="navbar-item" href="#abstract">Abstract</a>
         <a class="navbar-item" href="#framework">Framework</a>
         <a class="navbar-item" href="#algorithm">Algorithm</a>
         <a class="navbar-item" href="#results">Results</a>
@@ -217,8 +228,10 @@
       <div class="box">
         <div class="columns is-centered">
           <div class="column is-full has-text-centered">
-              <h2 class="title is-3">>ALDEN Algorithm</h2>
+              <h2 class="title is-3">ALDEN Algorithm</h2>
+                <figure class="image is-1by1">
                 <img src="static/images/ALDEN_Alg.jpg" alt="ALDEN Algorithm Pseudocode">
+                  </figure>
               <div class="content" style="margin-top: 1rem;">
                 <p class="has-text-centered" style="margin-top: 0.5rem;">Algorithm 1: The Proposed ALDEN Framework</p>
               </div>
