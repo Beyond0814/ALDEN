@@ -241,12 +241,20 @@
 <section class="section" id="results">
   <div class="container is-max-desktop">
     <!-- Comparative Experiments Box -->
-    <div class="box has-text-centered">
-      <h3 class="title is-4">Cross-Vocoder Comparative Experiments</h3>
-      <img src="static/images/Cross_Vocoder.jpg" alt="Cross-Vocoder Comparison Table">
-      <p style="margin-top: 0.5rem;">Table 2: EER (%) comparison of ADD methods under cross-vocoder scenarios.</p>
+    <div class="box">
+        <h3 class="title is-4 has-text-centered">Cross-vocoder and In-the-wild Scenarios</h3>
+        <div id="results-carousel" class="carousel results-carousel">
+         <div class="item">
+          <img src="static/images/Cross_Vocoder.jpg" alt="Cross-Vocoder Comparison Table"/>
+          <h2 class="subtitle has-text-centered">Table 2: EER (%) comparison of ADD methods under cross-vocoder scenarios.</h2>
+        </div>
+        <div class="item">
+          <img src="static/images/ITW.jpg" alt="In-the-wild Scenario Results"/>
+          <h2 class="subtitle has-text-centered">Figure 3: EER (%) comparison of ADD methods under in-the-wild scenario.</h2>
+        </div>
+      </div>
     </div>
-
+    
     <!-- Results Carousel Box -->
     <div class="box">
         <h3 class="title is-4 has-text-centered">Detailed Results on Different Datasets</h3>
@@ -268,8 +276,20 @@
         <h2 class="subtitle has-text-centered">Table 6: EER (%) Comparison under cross-vocoder evaluation on the CVF Dataset.</h2>
       </div>
        <div class="item">
-        <img src="static/images/ITW.jpg" alt="In-the-wild Scenario Results"/>
-        <h2 class="subtitle has-text-centered">Figure 2: EER (%) comparison of ADD methods under in-the-wild scenario.</h2>
+        <img src="static/images/ALDEN_Component.jpg" alt="Each Component Results"/>
+        <h2 class="subtitle has-text-centered">Table 7: Ablation results (EER (%)) for each component of the ALDEN framework.</h2>
+      </div>
+      <div class="item">
+        <img src="static/images/classifier_methods.jpg" alt="Various Classification Loss Functions"/>
+        <h2 class="subtitle has-text-centered">Figure 4: Ablation results (EER (\%)) across various classification loss functions.  CE denotes cross-entropy loss, and LN denotes LogitNorm loss.</h2>
+      </div>
+      <div class="item">
+        <img src="static/images/para_tuning.jpg" alt="Hyperparameter Settings"/>
+        <h2 class="subtitle has-text-centered">Figure 5: Ablation results (EER (%)) across various hyperparameter settings.</h2>
+      </div>
+      <div class="item">
+        <img src="static/images/Model_complexity.jpg" alt="Model Complexity"/>
+        <h2 class="subtitle has-text-centered">Table 8: Model complexity and throughput (samples per second) of different ADD methods.</h2>
       </div>
     </div>
     </div>
