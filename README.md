@@ -14,9 +14,13 @@ If you find our work useful, please consider citing our paper:
 
 ```bibtex
 @inproceedings{xu2025alden,
-  title={ALDEN: Dual-Level Disentanglement with Meta-learning for Generalizable Audio Deepfake Detection},
-  author={Yuxiong Xu and Bin Li and Weixiang Li and Sara Mandelli and Viola Negroni and Sheng Li},
-  conference={Proceedings of the 33rd ACM International Conference on Multimedia (ACM MM)},
-  year={2025}
+author = {Xu, Yuxiong and Li, Bin and Li, Weixiang and Mandelli, Sara and Negroni, Viola and Li, Sheng},
+title = {ALDEN: Dual-Level Disentanglement with Meta-learning for Generalizable Audio Deepfake Detection},
+year = {2025},
+url = {https://doi.org/10.1145/3746027.3754741},
+doi = {10.1145/3746027.3754741},
+booktitle = {Proceedings of the 33rd ACM International Conference on Multimedia},
+pages = {7277–7286},
+numpages = {10},
 }
 
