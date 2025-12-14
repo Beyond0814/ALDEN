@@ -1,0 +1,58 @@
+mode: train # train or test
+random_seed: 2024
+model_name: ALDEN
+
+# Model paths
+model_paths:
+  wavlm_path: Pretrained/wavlm/WavLM-Large.pt  # Update this path to your WavLM model
+  freevc_path: Pretrained/FreeVC/freevc.pth
+  freevc_config: Pretrained/FreeVC/configs/freevc.json
+  speaker_encoder_path: Pretrained/FreeVC/speaker_encoder/ckpt/pretrained_bak_5805000.pt
+
+train_config:
+  data_type: Voc4
+  num_epoch: 100
+  is_hand_feature: False
+  cut_length: 64600
+  train_bs: 12
+  dev_bs: 256 
+  num_workers: 8
+  shuffle: True
+  drop_last: True
+  filter_length: 1280
+  n_mel_channels: 80
+  sampling_rate: 16000  
+  hop_length: 320
+  win_length: 1280
+  center: False
+  mel_fmin: 0.0
+  mel_fmax: null
+  early_stopping_patience: 10
+  domain_num: 5
+  # Loss weights
+  w_cls_d: 0.5    # Weight for domain classification loss
+  w_dis_D: 0.2    # Weight for disentanglement loss between artifact and domain features
+  w_dis_S: 0.05   # Weight for disentanglement loss between artifact and speaker features
+  w_adv: 0.03      # Weight for adversarial loss (domain discriminator)
+  w_con: 0.05     # Weight for consistency loss (speaker feature consistency)
+  w_rec: 1.0      # Weight for reconstruction loss
+  optimizer:
+    # Detector optimizer
+    det_lr: 1e-6
+    det_weight_decay: 5e-6
+    det_eps: 1e-8
+    det_beta1: 0.9
+    det_beta2: 0.999
+    det_amsgrad: False
+    det_lr_step: 2
+    det_lr_gamma: 0.95
+
+evaluate:
+  data_type: ASVspoof19LA
+  eval_bs: 512
+  num_workers: 8
+  shuffle: False
+  drop_last: False
+  is_hand_feature: False
+  cut_length: 64600
+  test_model: Experiment/checkpoint.pt 
