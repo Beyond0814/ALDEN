@@ -13,7 +13,7 @@
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Beyond0814/ALDEN.git
+git clone https://github.com/Beyond0814/ALDEN/tree/main/ALDEN
 cd ALDEN
 ```
 
@@ -26,11 +26,16 @@ pip install -r requirements.txt
 
    - **WavLM-Large**: Download from [WavLM repository](https://github.com/microsoft/unilm/tree/master/wavlm) and place it in `Pretrained/wavlm/WavLM-Large.pt`
    
-   - **FreeVC**: Download FreeVC checkpoint and place it in `Pretrained/FreeVC/freevc.pth`
+   - **FreeVC**: Download from [FreeVC repository](https://github.com/OlaWod/FreeVC) and place it in `Pretrained/FreeVC/freevc.pth`
    
-   - **Speaker Encoder**: Download speaker encoder checkpoint and place it in `Pretrained/FreeVC/speaker_encoder/ckpt/pretrained_bak_5805000.pt`
+   - **Speaker Encoder**: Download from [FreeVC repository](https://github.com/OlaWod/FreeVC) and place it in `Pretrained/FreeVC/speaker_encoder/ckpt/pretrained_bak_5805000.pt`
 
-4. Configure dataset paths:
+4. Download ALDEN pretrained model (optional, for evaluation):
+
+   - **ALDEN Checkpoint**: Download the pretrained ALDEN model checkpoint from [Google Drive](https://drive.google.com/file/d/1YmdASztbbDwF0PZeg43kOvpdZVVAsg-_/view?usp=drive_link)
+   - Update the `test_model` path in `Config/config.yaml` to point to the downloaded checkpoint file
+
+5. Configure dataset paths:
 
    Edit `Script/load_dataset_path.py` and update the `dataset_path` variable to point to your dataset directory:
    ```python
@@ -78,6 +83,7 @@ The training script will:
 ### Evaluation
 
 1. Update `test_model` path in `Config/config.yaml` to point to your trained checkpoint
+   - You can download the pretrained ALDEN checkpoint from [Google Drive](https://drive.google.com/file/d/1YmdASztbbDwF0PZeg43kOvpdZVVAsg-_/view?usp=drive_link) for evaluation without training
 
 2. Run evaluation:
 ```bash
