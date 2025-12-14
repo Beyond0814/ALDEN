@@ -3,8 +3,6 @@
 > 🚀 **Exciting News!**
 >
 > We are thrilled to announce that our paper, *"ALDEN: Dual-Level Disentanglement with Meta-learning for Generalizable Audio Deepfake Detection"*, has been accepted for presentation at **ACM MM 2025**! 🎉
->
-> 🚧 **Project Status:** We are actively working on finalizing the project materials. All updates, including the source code and supplementary details, are expected to be completed within the next two months. Stay tuned!
 
 ---
 
