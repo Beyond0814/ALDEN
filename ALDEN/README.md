@@ -170,6 +170,8 @@ numpages = {10},
 }
 ```
 
+**Supplementary Materials**: The supplementary materials contain detailed information about the framework architecture and additional experimental results. [Download from Google Drive](https://drive.google.com/file/d/1nAKUO0wsFZcTPzIuubk7ljvHJIKS95WC/view?usp=drive_link)
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
